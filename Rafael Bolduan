@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class ConversorMoeda {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Lê a cotação do dólar
+        System.out.print("Digite a cotação do dólar: ");
+        double cotacaoDolar = scanner.nextDouble();
+
+        // Lê o valor em dólares
+        System.out.print("Digite o valor em dólares: ");
+        double valorDolar = scanner.nextDouble();
+
+        // Converte o valor para reais
+        double valorReal = valorDolar * cotacaoDolar;
+
+        // Mostra o resultado
+        System.out.printf("O valor em reais é: R$ %.2f%n", valorReal);
+
+        scanner.close();
+    }
+}
